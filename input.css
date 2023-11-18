@@ -107,8 +107,4 @@ nav a:hover::after {
     .info-span{
         display: none;
     }
-
-    h1 {
-        font-size: 3.75rem !important;
-    }
 }

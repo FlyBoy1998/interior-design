@@ -30,6 +30,32 @@ nav a:hover::after {
     width: 100%;
 }
 
+.play-video-btn {
+    border-radius: 50%;
+    animation: grow 4s infinite ease-in-out;
+    transition: .3s;
+}
+
+.play-video-btn:hover {
+    background-color: #dfdfdf;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
 /* HAMBURGER BUTTON */
 
 .hamburger {
@@ -80,5 +106,9 @@ nav a:hover::after {
 @media screen and (max-width: 500px) {
     .info-span{
         display: none;
+    }
+
+    h1 {
+        font-size: 3.75rem !important;
     }
 }

@@ -54,6 +54,15 @@ nav a:hover::after {
     }
 }
 
+.team-contact {
+    transform: translateY(100%);
+    /* transition: transform 0.2s linear; */
+}
+
+.image-container:hover .team-contact {
+    transform: translateY(0%);
+}
+
 /* HAMBURGER BUTTON */
 
 .hamburger {

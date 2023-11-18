@@ -15,6 +15,23 @@
     font-family: 'Merriweather', serif;
 }
 
+nav a::after {
+    content: '';
+    height: 1px;
+    position: absolute;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transition: all 0.3s linear;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+
 @media screen and (max-width: 500px) {
     .info-span{
         display: none;

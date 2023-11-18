@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .social-media-icon {
+        @apply text-white hover:text-gray-400 transition-colors ease-linear;
+    }
+}
+
+#hero-container {
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/hero-image.jpg');
+    background-position: center;
+    background-size: cover;
+    font-family: 'Merriweather', serif;
+}
+
+@media screen and (max-width: 500px) {
+    .info-span{
+        display: none;
+    }
+}

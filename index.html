@@ -29,15 +29,23 @@
                 </div>
             </div>
             <!-- Navbar -->
-            <nav class="container flex items-center justify-between w-full mx-auto py-6">
-                <h1 class="text-2xl uppercase text-white font-bold tracking-wide">Design</h1>
-                <ul class="list-none flex items-center space-x-10 text-white tracking-wide text-sm">
+            <nav class="container flex items-center justify-between w-full mx-auto py-6 px-5">
+                <h1 class="text-2xl uppercase text-white font-bold tracking-wide cursor-pointer">Design</h1>
+                <ul class="list-none hidden md:flex items-center space-x-10 text-white tracking-wide text-sm">
                     <li><a class="relative py-3" href="#">Home</a></li>
                     <li><a class="relative py-3" href="#">About Us <i class="fa-solid fa-chevron-down"></i></a></li>
                     <li><a class="relative py-3" href="#">Projects</a></li>
                     <li><a class="relative py-3" href="#">News</a></li>
                     <li><a class="relative py-3" href="#">Services</a></li>
                 </ul>
+                <!-- Hamburger Button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" type="button" class="z-40 block hamburger md:hidden focus:outline-none">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+                </div>
             </nav>
         </div>
     </section>

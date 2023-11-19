@@ -117,6 +117,36 @@ nav a:hover::after {
     transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
 
+/* STYLE ACCORDIONS FOR FAQ */
+label::before {
+    content: '+';
+    margin-right: 12px;
+    font-weight: bolder;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s linear;
+}
+
+input[type="radio"]:checked + label + .content {
+    max-height: 400px;
+}
+
+input[type="radio"]:checked + label {
+    color: rgb(255, 98, 0);
+    transition: color 0.2s linear;
+}
+
+input[type="radio"]:checked + label::before {
+    content: '-';
+}
+
 @media screen and (max-width: 500px) {
     .info-span{
         display: none;

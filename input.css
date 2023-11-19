@@ -147,6 +147,36 @@ input[type="radio"]:checked + label::before {
     content: '-';
 }
 
+/* TESTIMONIALS STYLING */
+.client-image-container {
+    border-radius: 50%;
+}
+
+#previous,
+#next {
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: backgorund-color 0.3s linear;
+}
+
+#previous:hover,
+#next:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+#previous {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+.client-container {
+    flex: 1 0 100%;
+}
+
 @media screen and (max-width: 500px) {
     .info-span{
         display: none;

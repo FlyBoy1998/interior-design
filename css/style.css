@@ -582,6 +582,15 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
+.testimonial-bullet {
+  height: 8px;
+  width: 8px;
+  cursor: pointer;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 88 12 / var(--tw-bg-opacity));
+}
+
 .absolute {
   position: absolute;
 }
@@ -700,10 +709,6 @@ video {
   height: 60px;
 }
 
-.h-\[8px\] {
-  height: 8px;
-}
-
 .h-auto {
   height: auto;
 }
@@ -734,10 +739,6 @@ video {
 
 .w-\[60px\] {
   width: 60px;
-}
-
-.w-\[8px\] {
-  width: 8px;
 }
 
 .w-full {
@@ -1252,7 +1253,7 @@ input[type="radio"]:checked + label::before {
   border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);
-  transition: backgorund-color 0.3s linear;
+  transition: background-color 0.3s linear;
 }
 
 #previous:hover,

@@ -6,6 +6,10 @@
     .social-media-icon {
         @apply text-white hover:text-gray-400 transition-colors ease-linear;
     }
+
+    .testimonial-bullet {
+        @apply w-[8px] h-[8px] bg-orange-600 rounded-full cursor-pointer;
+    }
 }
 
 #hero-container {
@@ -157,7 +161,7 @@ input[type="radio"]:checked + label::before {
     border-radius: 50%;
     top: 50%;
     transform: translateY(-50%);
-    transition: backgorund-color 0.3s linear;
+    transition: background-color 0.3s linear;
 }
 
 #previous:hover,

@@ -190,6 +190,23 @@ input[type="radio"]:checked + label::before {
     transform: scale(1.1);
 }
 
+/* CONTACT STYLING */
+#contact {
+    background-color: whitesmoke;
+}
+
+#contact label::before {
+    content: none;
+}
+
+#contact input {
+    transition: border 0.2s linear;
+}
+
+textarea {
+    resize: none;
+}
+
 @media screen and (max-width: 500px) {
     .info-span{
         display: none;

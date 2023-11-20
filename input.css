@@ -207,6 +207,15 @@ textarea {
     resize: none;
 }
 
+/* FOOTER STYLING */
+#footer {
+    background-color: #303030;
+}
+
+#footer input {
+    transition: border 0.2s linear;;
+}
+
 @media screen and (max-width: 500px) {
     .info-span{
         display: none;

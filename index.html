@@ -14,7 +14,7 @@
 
 <body>
     <!-- Hero Container -->
-    <section id="hero-container" class="h-screen">
+    <section id="hero-container" class="h-screen relative">
         <!-- Sticky Navbar -->
         <div class="sticky-container w-full fixed top-0 bg-orange-600">
             <div class="sticky-nav-container max-w-6xl mx-auto">
@@ -22,8 +22,7 @@
                     <h2 class="text-2xl uppercase text-white font-bold tracking-wide cursor-pointer">Design</h2>
                     <ul class="list-none hidden md:flex items-center space-x-10 text-white tracking-wide text-sm">
                         <li><a class="relative py-3" href="#">Home</a></li>
-                        <li><a class="relative py-3" href="#about">About Us <i
-                                    class="fa-solid fa-chevron-down"></i></a>
+                        <li><a class="relative py-3" href="#about">About Us <i class="fa-solid fa-chevron-down"></i></a>
                         </li>
                         <li><a class="relative py-3" href="#team">Our Team</a></li>
                         <li><a class="relative py-3" href="#projects">Projects</a></li>
@@ -61,8 +60,7 @@
                 <h2 class="text-2xl uppercase text-white font-bold tracking-wide cursor-pointer">Design</h2>
                 <ul class="list-none hidden md:flex items-center space-x-10 text-white tracking-wide text-sm">
                     <li><a class="relative py-3" href="#">Home</a></li>
-                    <li><a class="relative py-3" href="#about">About Us <i
-                                class="fa-solid fa-chevron-down"></i></a>
+                    <li><a class="relative py-3" href="#about">About Us <i class="fa-solid fa-chevron-down"></i></a>
                     </li>
                     <li><a class="relative py-3" href="#team">Our Team</a></li>
                     <li><a class="relative py-3" href="#projects">Projects</a></li>
@@ -80,17 +78,18 @@
             </nav>
             <!-- Mobile Menu -->
             <div class="mobile-menu block w-[70%] sm:w-[40%] md:hidden  h-full bg-white z-20 fixed top-0 right-0">
-                <ul class="list-none flex flex-col justify-center items-start relative gap-8 h-[70%] ps-8 text-gray-600 tracking-wider text-xl">
+                <ul
+                    class="list-none flex flex-col justify-center items-start relative gap-8 h-[70%] ps-8 text-gray-600 tracking-wider text-xl">
                     <li><a class="relative py-3" href="#">Home</a></li>
-                    <li><a class="relative py-3" href="#about">About Us <i
-                                class="fa-solid fa-chevron-down"></i></a>
+                    <li><a class="relative py-3" href="#about">About Us <i class="fa-solid fa-chevron-down"></i></a>
                     </li>
                     <li><a class="relative py-3" href="#team">Our Team</a></li>
                     <li><a class="relative py-3" href="#projects">Projects</a></li>
                     <li><a class="relative py-3" href="#services">Services</a></li>
                     <li><a class="relative py-3" href="#contact">Contact</a></li>
                 </ul>
-                <button class="close-btn absolute top-8 right-8 text-3xl p-3 text-gray-400"><i class="fa-solid fa-xmark"></i></button>
+                <button class="close-btn absolute top-8 right-8 text-3xl p-3 text-gray-400"><i
+                        class="fa-solid fa-xmark"></i></button>
             </div>
 
             <!-- Video Button & Main Title -->
@@ -102,6 +101,14 @@
                 </h1>
                 <p class="text-gray-300 text-center italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Officiis, modi!</p>
+            </div>
+        </div>
+        <!-- Video Modal -->
+        <div class="modal w-full h-full fixed top-0 z-100">
+            <div class="video-modal flex items-center relative w-full h-full justify-center p-15">
+                <div class="video-modal w-[60%] h-auto z-100">
+                    <video src="./modal-video.mp4" class="w-full h-full rounded-xl" controls loop></video>
+                </div>
             </div>
         </div>
     </section>

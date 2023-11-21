@@ -131,6 +131,7 @@ nav a:hover::after {
 /* VIDEO MODAL STYLING */
 .modal {
     backdrop-filter: brightness(40%);
+    transition: all 1s ease 1s;
 }
 
 /* STYLE ACCORDIONS FOR FAQ */

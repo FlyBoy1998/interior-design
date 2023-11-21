@@ -16,7 +16,12 @@
 .sticky-container {
     transform: translateY(-100%);
     z-index: 10;
-    transition: all 0.3s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.sticky-visible {
+    transform: translateY(0);
+    box-shadow: 0 0 6px 4px gray;
 }
 
 #hero-container {
@@ -126,6 +131,17 @@ nav a:hover::after {
 
 .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+/* MOBILE MENU */
+.mobile-menu {
+    translate: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.mobile-menu-visible {
+    translate: 0;
+    box-shadow: 0 0 10px 6px #808080;
 }
 
 /* STYLE ACCORDIONS FOR FAQ */

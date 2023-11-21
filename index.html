@@ -16,18 +16,19 @@
     <!-- Hero Container -->
     <section id="hero-container" class="h-screen">
         <!-- Sticky Navbar -->
-        <div class="sticky-container w-full fixed top-0 bg-orange-500 shadow-md shadow-gray-500">
+        <div class="sticky-container w-full fixed top-0 bg-orange-600">
             <div class="sticky-nav-container max-w-6xl mx-auto">
                 <nav class="container flex items-center justify-between w-full mx-auto py-6 px-5">
                     <h2 class="text-2xl uppercase text-white font-bold tracking-wide cursor-pointer">Design</h2>
                     <ul class="list-none hidden md:flex items-center space-x-10 text-white tracking-wide text-sm">
-                        <li><a class="relative py-3" href="#">Home</a></li>
-                        <li><a class="relative py-3" href="#about">About Us <i class="fa-solid fa-chevron-down"></i></a>
+                        <li><a class="py-3" href="#">Home</a></li>
+                        <li class="relative"><a class="py-3" href="#about">About Us <i
+                                    class="fa-solid fa-chevron-down"></i></a>
                         </li>
-                        <li><a class="relative py-3" href="#team">Our Team</a></li>
-                        <li><a class="relative py-3" href="#projects">Projects</a></li>
-                        <li><a class="relative py-3" href="#services">Services</a></li>
-                        <li><a class="relative py-3" href="#">Contact</a></li>
+                        <li><a class="py-3" href="#team">Our Team</a></li>
+                        <li><a class="py-3" href="#projects">Projects</a></li>
+                        <li><a class="py-3" href="#services">Services</a></li>
+                        <li><a class="py-3" href="#contact">Contact</a></li>
                     </ul>
                     <!-- Hamburger Button -->
                     <div class="md:hidden">
@@ -59,16 +60,17 @@
             <nav class="container flex items-center justify-between w-full mx-auto py-6 px-5">
                 <h2 class="text-2xl uppercase text-white font-bold tracking-wide cursor-pointer">Design</h2>
                 <ul class="list-none hidden md:flex items-center space-x-10 text-white tracking-wide text-sm">
-                    <li><a class="relative py-3" href="#">Home</a></li>
-                    <li><a class="relative py-3" href="#about">About Us <i class="fa-solid fa-chevron-down"></i></a>
+                    <li><a class="py-3" href="#">Home</a></li>
+                    <li class="relative"><a class="py-3" href="#about">About Us <i
+                                class="fa-solid fa-chevron-down"></i></a>
                     </li>
-                    <li><a class="relative py-3" href="#team">Our Team</a></li>
-                    <li><a class="relative py-3" href="#projects">Projects</a></li>
-                    <li><a class="relative py-3" href="#services">Services</a></li>
-                    <li><a class="relative py-3" href="#">Contact</a></li>
+                    <li><a class="py-3" href="#team">Our Team</a></li>
+                    <li><a class="py-3" href="#projects">Projects</a></li>
+                    <li><a class="py-3" href="#services">Services</a></li>
+                    <li><a class="py-3" href="#contact">Contact</a></li>
                 </ul>
                 <!-- Hamburger Button -->
-                <div class="md:hidden">
+                <div class="hamburger-btn md:hidden">
                     <button id="menu-btn" type="button" class="z-40 block hamburger md:hidden focus:outline-none">
                         <span class="hamburger-top"></span>
                         <span class="hamburger-middle"></span>
@@ -76,10 +78,22 @@
                     </button>
                 </div>
             </nav>
-            <!-- @todo Mobile Menu -->
+            <!-- Mobile Menu -->
+            <div class="mobile-menu block md:hidden w-[70%] h-full bg-white z-20 fixed top-0 right-0">
+                <ul class="list-none flex flex-col justify-center items-start relative gap-8 h-[70%] ps-8 text-gray-600 tracking-wider text-xl">
+                    <li><a class="py-3" href="#">Home</a></li>
+                    <li class="relative"><a class="py-3" href="#about">About Us <i
+                                class="fa-solid fa-chevron-down"></i></a>
+                    </li>
+                    <li><a class="py-3" href="#team">Our Team</a></li>
+                    <li><a class="py-3" href="#projects">Projects</a></li>
+                    <li><a class="py-3" href="#services">Services</a></li>
+                    <li><a class="py-3" href="#contact">Contact</a></li>
+                </ul>
+                <button class="close-btn absolute top-8 right-8 text-3xl p-3 text-gray-400"><i class="fa-solid fa-xmark"></i></button>
+            </div>
 
             <!-- Video Button & Main Title -->
-
             <div class="container flex flex-col items-center justify-center w-full mx-auto mt-14 py-10 px-5">
                 <button
                     class="play-video-btn w-[60px] h-[60px] mb-9 transition-colors ease-linear bg-white text-xl md:mb-12"><i
@@ -475,7 +489,7 @@
                 <!-- Client 4 -->
                 <div class="client-container flex flex-col items-center">
                     <div class="client-image-container w-[120px] h-[120px] mb-4">
-                        <img src="./images/.jpg" alt="" class="rounded-full">
+                        <img src="./images/client-4.jpg" alt="" class="rounded-full">
                     </div>
                     <h5 class="text-xl font-semibold text-gray-800">Nicolas Stainer</h5>
                     <h4 class="text-base font-semibold text-orange-600 mb-8">Owner of building</h4>
@@ -697,6 +711,7 @@
             </div>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>

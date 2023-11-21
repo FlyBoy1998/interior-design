@@ -615,12 +615,24 @@ video {
   right: 0px;
 }
 
+.right-8 {
+  right: 2rem;
+}
+
 .top-0 {
   top: 0px;
 }
 
+.top-8 {
+  top: 2rem;
+}
+
 .z-10 {
   z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .z-40 {
@@ -729,6 +741,10 @@ video {
   height: 60px;
 }
 
+.h-\[70\%\] {
+  height: 70%;
+}
+
 .h-auto {
   height: auto;
 }
@@ -763,6 +779,10 @@ video {
 
 .w-\[60px\] {
   width: 60px;
+}
+
+.w-\[70\%\] {
+  width: 70%;
 }
 
 .w-full {
@@ -835,6 +855,10 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .gap-x-0 {
@@ -962,11 +986,6 @@ video {
   border-color: rgb(234 88 12 / var(--tw-border-opacity));
 }
 
-.bg-orange-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
-}
-
 .bg-orange-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(234 88 12 / var(--tw-bg-opacity));
@@ -975,6 +994,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .px-14 {
@@ -1030,6 +1053,10 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.ps-8 {
+  padding-inline-start: 2rem;
 }
 
 .text-center {
@@ -1104,6 +1131,10 @@ video {
   letter-spacing: 0.025em;
 }
 
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
 .text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
@@ -1117,6 +1148,11 @@ video {
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .text-gray-800 {
@@ -1159,11 +1195,6 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.shadow-gray-500 {
-  --tw-shadow-color: #6b7280;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1200,7 +1231,12 @@ video {
 .sticky-container {
   transform: translateY(-100%);
   z-index: 10;
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.sticky-visible {
+  transform: translateY(0);
+  box-shadow: 0 0 6px 4px gray;
 }
 
 #hero-container {
@@ -1310,6 +1346,18 @@ nav a:hover::after {
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+/* MOBILE MENU */
+
+.mobile-menu {
+  translate: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-menu-visible {
+  translate: 0;
+  box-shadow: 0 0 10px 6px #808080;
 }
 
 /* STYLE ACCORDIONS FOR FAQ */

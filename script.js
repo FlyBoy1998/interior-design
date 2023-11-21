@@ -1,6 +1,6 @@
 const stickyNavbar = document.querySelector('.sticky-container');
 const mobileMenu = document.querySelector('.mobile-menu');
-const hamburgerBtn = document.querySelector('.hamburger-btn');
+const hamburgerBtn = document.querySelectorAll('.hamburger-btn');
 const closeBtn = document.querySelector('.close-btn');
 
 // Display Sticky Navbar
@@ -22,6 +22,8 @@ function hideMobileMenu() {
     mobileMenu.classList.remove('mobile-menu-visible');
 }
 
-window.addEventListener('scroll', displayStickyNav);
-hamburgerBtn.addEventListener('click', showMobileMenu);
+hamburgerBtn.forEach((btn) => {
+    btn.addEventListener('click', () => showMobileMenu());
+})
 closeBtn.addEventListener('click', hideMobileMenu);
+window.addEventListener('scroll', displayStickyNav);

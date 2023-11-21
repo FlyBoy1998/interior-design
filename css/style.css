@@ -1357,7 +1357,7 @@ nav a:hover::after {
 
 .mobile-menu-visible {
   translate: 0;
-  box-shadow: 0 0 10px 6px #808080;
+  box-shadow: 0 0 6px 3px #808080;
 }
 
 /* STYLE ACCORDIONS FOR FAQ */
@@ -1486,6 +1486,10 @@ textarea {
 }
 
 @media (min-width: 640px) {
+  .sm\:w-\[40\%\] {
+    width: 40%;
+  }
+
   .sm\:flex-initial {
     flex: 0 1 auto;
   }

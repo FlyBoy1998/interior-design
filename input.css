@@ -141,7 +141,7 @@ nav a:hover::after {
 
 .mobile-menu-visible {
     translate: 0;
-    box-shadow: 0 0 10px 6px #808080;
+    box-shadow: 0 0 4px 3px #808080;
 }
 
 /* STYLE ACCORDIONS FOR FAQ */

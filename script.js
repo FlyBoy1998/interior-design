@@ -5,6 +5,7 @@ const closeBtn = document.querySelector('.close-btn');
 const playVideoBtn = document.querySelector('.play-video-btn');
 const closeModalBtn = document.querySelector('.close-modal-btn');
 const modal = document.querySelector('.modal');
+const videoContainer = document.getElementById('video-container');
 const video = document.getElementById('video');
 console.log(typeof video);
 
@@ -12,6 +13,8 @@ console.log(typeof video);
 function playVideo() {
     modal.classList.add('fixed');
     modal.classList.remove('hidden');
+    // Disable Scrolling While Video Plays
+    document.body.style.overflowY = 'hidden';
     video.play();
 }
 
@@ -19,6 +22,8 @@ function playVideo() {
 function closeModal() {
     modal.classList.remove('fixed');
     modal.classList.add('hidden');
+    // Enable Scrolling
+    document.body.style.overflowY = 'scroll';
     video.load();
 }
 

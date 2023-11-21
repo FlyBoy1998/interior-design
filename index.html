@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="#"/>
 </head>
 
 <body>
@@ -104,9 +105,9 @@
             </div>
         </div>
         <!-- Video Modal -->
-        <div class="modal w-full h-full hidden top-0 z-100">
+        <div class="modal w-full h-full hidden top-0 z-10">
             <div class="video-modal flex items-center relative w-full h-full justify-center p-15">
-                <div class="video-modal w-[90%] md:w-[60%] h-auto z-100">
+                <div id="video-container" class="w-[90%] md:w-[60%] h-auto z-10">
                     <video id="video" src="./modal-video.mp4" class="w-full h-full rounded-xl" controls></video>
                 </div>
                 <button class="close-modal-btn absolute top-[25%] right-[5%] sm:top-0 sm:right-0 w-14 h-14 bg-gray-700 text-gray-200 text-xl hover:text-white hover:bg-slate-600 transition-all duration-200 ease-linear"><i class="fa-solid fa-xmark"></i></button>

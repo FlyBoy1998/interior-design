@@ -623,8 +623,32 @@ video {
   top: 0px;
 }
 
+.top-12 {
+  top: 3rem;
+}
+
 .top-8 {
   top: 2rem;
+}
+
+.right-\[5\%\] {
+  right: 5%;
+}
+
+.top-\[40\%\] {
+  top: 40%;
+}
+
+.top-\[30\%\] {
+  top: 30%;
+}
+
+.top-\[20\%\] {
+  top: 20%;
+}
+
+.top-\[25\%\] {
+  top: 25%;
 }
 
 .z-10 {
@@ -729,6 +753,10 @@ video {
   height: 3rem;
 }
 
+.h-14 {
+  height: 3.5rem;
+}
+
 .h-2\/3 {
   height: 66.666667%;
 }
@@ -769,12 +797,12 @@ video {
   width: 3rem;
 }
 
-.w-\[120px\] {
-  width: 120px;
+.w-14 {
+  width: 3.5rem;
 }
 
-.w-\[60\%\] {
-  width: 60%;
+.w-\[120px\] {
+  width: 120px;
 }
 
 .w-\[600px\] {
@@ -787,6 +815,10 @@ video {
 
 .w-\[70\%\] {
   width: 70%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .w-full {
@@ -994,6 +1026,11 @@ video {
   border-color: rgb(234 88 12 / var(--tw-border-opacity));
 }
 
+.bg-gray-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
 .bg-orange-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(234 88 12 / var(--tw-bg-opacity));
@@ -1141,6 +1178,11 @@ video {
 
 .tracking-wider {
   letter-spacing: 0.05em;
+}
+
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .text-gray-300 {
@@ -1355,8 +1397,8 @@ nav a:hover::after {
 /* VIDEO MODAL STYLING */
 
 .modal {
-  -webkit-backdrop-filter: brightness(50%);
-          backdrop-filter: brightness(50%);
+  -webkit-backdrop-filter: brightness(40%);
+          backdrop-filter: brightness(40%);
 }
 
 /* STYLE ACCORDIONS FOR FAQ */
@@ -1474,6 +1516,11 @@ textarea {
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .focus\:border-orange-500:focus {
   --tw-border-opacity: 1;
   border-color: rgb(249 115 22 / var(--tw-border-opacity));
@@ -1485,6 +1532,14 @@ textarea {
 }
 
 @media (min-width: 640px) {
+  .sm\:right-0 {
+    right: 0px;
+  }
+
+  .sm\:top-0 {
+    top: 0px;
+  }
+
   .sm\:w-\[40\%\] {
     width: 40%;
   }
@@ -1534,6 +1589,10 @@ textarea {
 
   .md\:w-2\/3 {
     width: 66.666667%;
+  }
+
+  .md\:w-\[60\%\] {
+    width: 60%;
   }
 
   .md\:grid-cols-2 {

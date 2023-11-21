@@ -130,7 +130,7 @@ nav a:hover::after {
 
 /* VIDEO MODAL STYLING */
 .modal {
-    backdrop-filter: brightness(50%);
+    backdrop-filter: brightness(40%);
 }
 
 /* STYLE ACCORDIONS FOR FAQ */

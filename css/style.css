@@ -591,6 +591,10 @@ video {
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -609,6 +613,10 @@ video {
 
 .right-0 {
   right: 0px;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .z-10 {
@@ -954,6 +962,11 @@ video {
   border-color: rgb(234 88 12 / var(--tw-border-opacity));
 }
 
+.bg-orange-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+}
+
 .bg-orange-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(234 88 12 / var(--tw-bg-opacity));
@@ -1146,6 +1159,11 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.shadow-gray-500 {
+  --tw-shadow-color: #6b7280;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1175,6 +1193,14 @@ video {
 
 .ease-linear {
   transition-timing-function: linear;
+}
+
+/* STICKY NAV CONTAINER */
+
+.sticky-container {
+  transform: translateY(-100%);
+  z-index: 10;
+  transition: all 0.3s ease-out;
 }
 
 #hero-container {

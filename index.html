@@ -15,6 +15,31 @@
 <body>
     <!-- Hero Container -->
     <section id="hero-container" class="h-screen">
+        <!-- Sticky Navbar -->
+        <div class="sticky-container w-full fixed top-0 bg-orange-500 shadow-md shadow-gray-500">
+            <div class="sticky-nav-container max-w-6xl mx-auto">
+                <nav class="container flex items-center justify-between w-full mx-auto py-6 px-5">
+                    <h2 class="text-2xl uppercase text-white font-bold tracking-wide cursor-pointer">Design</h2>
+                    <ul class="list-none hidden md:flex items-center space-x-10 text-white tracking-wide text-sm">
+                        <li><a class="relative py-3" href="#">Home</a></li>
+                        <li><a class="relative py-3" href="#about">About Us <i class="fa-solid fa-chevron-down"></i></a>
+                        </li>
+                        <li><a class="relative py-3" href="#team">Our Team</a></li>
+                        <li><a class="relative py-3" href="#projects">Projects</a></li>
+                        <li><a class="relative py-3" href="#services">Services</a></li>
+                        <li><a class="relative py-3" href="#">Contact</a></li>
+                    </ul>
+                    <!-- Hamburger Button -->
+                    <div class="md:hidden">
+                        <button id="menu-btn" type="button" class="z-40 block hamburger md:hidden focus:outline-none">
+                            <span class="hamburger-top"></span>
+                            <span class="hamburger-middle"></span>
+                            <span class="hamburger-bottom"></span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
         <div class="container max-w-6xl mx-auto">
             <!-- Top Navbar -->
             <div class="container flex items-center justify-between w-full mx-auto py-6 px-5 border-b border-gray-200">
@@ -51,7 +76,6 @@
                     </button>
                 </div>
             </nav>
-
             <!-- @todo Mobile Menu -->
 
             <!-- Video Button & Main Title -->

@@ -2,6 +2,25 @@ const stickyNavbar = document.querySelector('.sticky-container');
 const mobileMenu = document.querySelector('.mobile-menu');
 const hamburgerBtn = document.querySelectorAll('.hamburger-btn');
 const closeBtn = document.querySelector('.close-btn');
+const playVideoBtn = document.querySelector('.play-video-btn');
+const closeModalBtn = document.querySelector('.close-modal-btn');
+const modal = document.querySelector('.modal');
+const video = document.getElementById('video');
+console.log(typeof video);
+
+// Play Video 
+function playVideo() {
+    modal.classList.add('fixed');
+    modal.classList.remove('hidden');
+    video.play();
+}
+
+// Close Video Modal 
+function closeModal() {
+    modal.classList.remove('fixed');
+    modal.classList.add('hidden');
+    video.load();
+}
 
 // Display Sticky Navbar
 function displayStickyNav() {
@@ -27,3 +46,5 @@ hamburgerBtn.forEach((btn) => {
 })
 closeBtn.addEventListener('click', hideMobileMenu);
 window.addEventListener('scroll', displayStickyNav);
+playVideoBtn.addEventListener('click', playVideo);
+closeModalBtn.addEventListener('click', closeModal);

@@ -50,7 +50,7 @@ nav a:hover::after {
 .dropdown-list {
     transform: translateY(15%);
     opacity: 0;
-    visibility: none;
+    visibility: hidden;
     transition: all 0.4s ease-out;
 }
 

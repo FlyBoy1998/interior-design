@@ -250,6 +250,11 @@ textarea {
     transition: border 0.2s linear;;
 }
 
+.footer-social-media-icons i:hover {
+    color: #d6d6d6;
+    transition: color 0.3s ease;
+}
+
 @media screen and (max-width: 500px) {
     .info-span{
         display: none;

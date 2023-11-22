@@ -1387,21 +1387,29 @@ nav a:hover::after {
 .modal {
   -webkit-backdrop-filter: brightness(40%);
           backdrop-filter: brightness(40%);
-  transition: all 1s ease 1s;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+  z-index: -1;
 }
 
 /* FADE IN EFFECT FOR VIDEO CONTAINER */
 
-.video-container {
+.video-modal {
   transform: translateY(-15%);
   opacity: 0;
-  transition: all 0.6s ease-in-out;
-  transition-delay: 1s;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.video-modal .close-modal-btn {
+  transition: none;
 }
 
 .video-container-fade {
   transform: translateY(0);
   opacity: 1;
+  z-index: 10;
 }
 
 /* STYLE ACCORDIONS FOR FAQ */

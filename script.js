@@ -7,7 +7,6 @@ const closeModalBtn = document.querySelector('.close-modal-btn');
 const modal = document.querySelector('.modal');
 const videoModal = document.querySelector('.video-modal');
 const video = document.getElementById('video');
-console.log(typeof video);
 
 // Play Video 
 function playVideo() {

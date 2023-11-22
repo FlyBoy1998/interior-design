@@ -631,12 +631,12 @@ video {
   top: 2rem;
 }
 
-.top-\[100\%\] {
-  top: 100%;
-}
-
 .top-\[25\%\] {
   top: 25%;
+}
+
+.top-\[95\%\] {
+  top: 95%;
 }
 
 .z-10 {
@@ -1320,6 +1320,29 @@ nav a::after {
 
 nav a:hover::after {
   width: 100%;
+}
+
+/* DROPDOWN LIST */
+
+.dropdown-list {
+  transform: translateY(15%);
+  opacity: 0;
+  visibility: none;
+  transition: all 0.4s ease-out;
+}
+
+.dropdown-list li a::after {
+  content: none;
+}
+
+.dropdown-list li a:hover {
+  background-color: #a5a5a5;
+}
+
+.dropdown-btn:hover .dropdown-list {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
 }
 
 .play-video-btn {

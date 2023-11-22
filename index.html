@@ -23,7 +23,14 @@
                     <h2 class="text-2xl uppercase text-white font-bold tracking-wide cursor-pointer">Design</h2>
                     <ul class="list-none hidden md:flex items-center space-x-10 text-white tracking-wide text-sm">
                         <li><a class="relative py-3" href="#">Home</a></li>
-                        <li><a class="relative py-3" href="#about">About Us <i class="fa-solid fa-chevron-down"></i></a>
+                        <li class="dropdown-btn relative py-3"><a class="relative py-3" href="#about">About Us <i class="fa-solid fa-chevron-down"></i></a>
+                            <div class="dropdown-list absolute top-[95%] z-20">
+                                <ul class="bg-gray-200 min-w-[180px] flex flex-col text-md list-none text-gray-800">
+                                    <li class="w-full "><a href="#team" class="block w-full py-4 px-3">Team</a></li>
+                                    <li class="w-full"><a href="#pricing" class="block w-full py-4 px-3">Pricing</a></li>
+                                    <li class="w-full"><a href="#faq" class="block w-full py-4 px-3">FAQ</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li><a class="relative py-3" href="#team">Our Team</a></li>
                         <li><a class="relative py-3" href="#projects">Projects</a></li>
@@ -61,8 +68,8 @@
                 <h2 class="text-2xl uppercase text-white font-bold tracking-wide cursor-pointer">Design</h2>
                 <ul class="list-none hidden md:flex items-center space-x-10 text-white tracking-wide text-sm">
                     <li><a class="relative py-3" href="#">Home</a></li>
-                    <li class="relative py-3"><a class="relative py-3" href="#about">About Us <i class="fa-solid fa-chevron-down"></i></a>
-                        <div class="dropdown-list absolute top-[100%] z-20">
+                    <li class="dropdown-btn relative py-3"><a class="relative py-3" href="#about">About Us <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="dropdown-list absolute top-[95%] z-20">
                             <ul class="bg-gray-200 min-w-[180px] flex flex-col text-md list-none text-gray-800">
                                 <li class="w-full "><a href="#team" class="block w-full py-4 px-3">Team</a></li>
                                 <li class="w-full"><a href="#pricing" class="block w-full py-4 px-3">Pricing</a></li>
@@ -89,7 +96,7 @@
                 <ul
                     class="list-none flex flex-col justify-center items-start relative gap-8 h-[70%] ps-8 text-gray-600 tracking-wider text-xl">
                     <li><a class="relative py-3" href="#">Home</a></li>
-                    <li><a class="relative py-3" href="#about">About Us <i class="fa-solid fa-chevron-down"></i></a>
+                    <li class="dropdown-btn relative py-3"><a class="relative py-3" href="#about">About Us <i class="fa-solid fa-chevron-down"></i></a>
                     </li>
                     <li><a class="relative py-3" href="#team">Our Team</a></li>
                     <li><a class="relative py-3" href="#projects">Projects</a></li>
@@ -381,7 +388,7 @@
     </section>
 
     <!-- FAQ -->
-    <section id="#faq">
+    <section id="faq">
         <div class="container flex max-w-6xl mx-auto mt-16 px-5 gap-12">
             <div class="faq-image-container w-1/2 py-12 hidden lg:block">
                 <img src="./images/faq-image.jpg" alt="FAQ">

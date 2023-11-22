@@ -15,7 +15,6 @@ function playVideo() {
     modal.classList.remove('visibility-hidden');
     videoModal.classList.add('video-container-fade');
     // Disable Scrolling While Video Plays
-    document.body.style.overflowY = 'hidden';
     video.play();
 }
 
@@ -25,7 +24,6 @@ function closeModal() {
     modal.classList.add('visibility-hidden');
     videoModal.classList.remove('video-container-fade');
     // Enable Scrolling
-    document.body.style.overflowY = 'scroll';
     video.load();
 }
 

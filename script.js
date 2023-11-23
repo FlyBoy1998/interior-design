@@ -53,6 +53,7 @@ function showDropdownList() {
     dropdownArrowBtn.classList.toggle('dropdown-arrow-rotate');
 }
 
+// Event listeners
 hamburgerBtn.forEach((btn) => {
     btn.addEventListener('click', () => showMobileMenu());
 })

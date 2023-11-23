@@ -301,6 +301,7 @@ textarea {
     transition: color 0.3s ease;
 }
 
+/* MEDIA QUERIES */
 @media screen and (max-width: 500px) {
     .info-span{
         display: none;

@@ -1346,6 +1346,15 @@ nav a:hover::after {
   visibility: visible;
 }
 
+/* DROPDOWN LIST MOBILE */
+
+.dropdown-list-mobile {
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: all 0.4s ease-out;
+}
+
 .play-video-btn {
   border-radius: 50%;
   animation: grow 4s infinite ease-in-out;

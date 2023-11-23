@@ -50,6 +50,7 @@ function hideMobileMenu() {
 // Display Drop Down List For Mobile
 function showDropdownList() {
     dropdownListMobile.classList.toggle('dropdown-list-mobile-visible');
+    dropdownArrowBtn.classList.toggle('dropdown-arrow-rotate');
 }
 
 hamburgerBtn.forEach((btn) => {

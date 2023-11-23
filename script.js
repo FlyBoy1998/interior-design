@@ -7,6 +7,8 @@ const closeModalBtn = document.querySelector('.close-modal-btn');
 const modal = document.querySelector('.modal');
 const videoModal = document.querySelector('.video-modal');
 const video = document.getElementById('video');
+const dropdownArrowBtn = document.querySelector('.dropdown-arrow-btn');
+const dropdownListMobile = document.querySelector('.dropdown-list-mobile');
 
 // Play Video 
 function playVideo() {
@@ -45,6 +47,11 @@ function hideMobileMenu() {
     mobileMenu.classList.remove('mobile-menu-visible');
 }
 
+// Display Drop Down List For Mobile
+function showDropdownList() {
+    dropdownListMobile.classList.toggle('dropdown-list-mobile-visible');
+}
+
 hamburgerBtn.forEach((btn) => {
     btn.addEventListener('click', () => showMobileMenu());
 })
@@ -52,3 +59,4 @@ closeBtn.addEventListener('click', hideMobileMenu);
 window.addEventListener('scroll', displayStickyNav);
 playVideoBtn.addEventListener('click', playVideo);
 closeModalBtn.addEventListener('click', closeModal);
+dropdownArrowBtn.addEventListener('click', showDropdownList);

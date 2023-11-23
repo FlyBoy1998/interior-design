@@ -26,7 +26,7 @@
                         <li class="dropdown-btn relative py-3"><a class="relative py-3" href="#about">About Us <i class="fa-solid fa-chevron-down"></i></a>
                             <div class="dropdown-list absolute top-[95%] z-20">
                                 <ul class="bg-gray-200 min-w-[180px] flex flex-col text-md list-none text-gray-800">
-                                    <li class="w-full "><a href="#team" class="block w-full py-4 px-3">Team</a></li>
+                                    <li class="w-full"><a href="#team" class="block w-full py-4 px-3">Team</a></li>
                                     <li class="w-full"><a href="#pricing" class="block w-full py-4 px-3">Pricing</a></li>
                                     <li class="w-full"><a href="#faq" class="block w-full py-4 px-3">FAQ</a></li>
                                 </ul>
@@ -70,7 +70,7 @@
                     <li><a class="relative py-3" href="#">Home</a></li>
                     <li class="dropdown-btn relative py-3"><a class="relative py-3" href="#about">About Us <i class="fa-solid fa-chevron-down"></i></a>
                         <div class="dropdown-list absolute top-[95%] z-20">
-                            <ul class="bg-gray-200 min-w-[180px] flex flex-col text-md list-none text-gray-800">
+                            <ul class="bg-gray-200 min-w-[180px] text-md list-none text-gray-800">
                                 <li class="w-full "><a href="#team" class="block w-full py-4 px-3">Team</a></li>
                                 <li class="w-full"><a href="#pricing" class="block w-full py-4 px-3">Pricing</a></li>
                                 <li class="w-full"><a href="#faq" class="block w-full py-4 px-3">FAQ</a></li>
@@ -91,19 +91,25 @@
                     </button>
                 </div>
             </nav>
-            <!-- Mobile Menu -->
+            <!-- @@Mobile Menu -->
             <div class="mobile-menu block w-[70%] sm:w-[40%] md:hidden h-full bg-white z-20 fixed top-0 right-0">
                 <ul
-                    class="list-none flex flex-col justify-center items-start relative gap-8 h-[70%] ps-8 text-gray-600 tracking-wider text-xl">
-                    <li><a class="relative py-3" href="#">Home</a></li>
-                    <li class="dropdown-btn relative py-3"><a class="relative py-3" href="#about">About Us <i class="fa-solid fa-chevron-down"></i></a>
-                    </li>
-                    <li><a class="relative py-3" href="#team">Our Team</a></li>
-                    <li><a class="relative py-3" href="#projects">Projects</a></li>
-                    <li><a class="relative py-3" href="#services">Services</a></li>
-                    <li><a class="relative py-3" href="#contact">Contact</a></li>
+                    class="list-none flex flex-col justify-center items-start relative gap-8 h-[70%] px-8 text-gray-600 tracking-wider text-xl">
+                    <li class="w-full"><a class="relative py-2 w-full" href="#">Home</a></li>
+                    <li class="dropdown-btn-mobile relative w-full"><a class="relative w-full" href="#about">About Us</a><i class="fa-solid fa-chevron-down dropdown-arrow-btn absolute right-0"></i></li>
+                    <div class="dropdown-list-mobile">
+                        <ul class="min-w-[180px] text-md list-none text-gray-800 space-y-1">
+                            <li class="w-full"><a href="#team" class="block w-full py-2 px-4 text-base">Team</a></li>
+                            <li class="w-full"><a href="#pricing" class="block w-full py-2 px-4 text-base">Pricing</a></li>
+                            <li class="w-full"><a href="#faq" class="block w-full py-2 px-4 text-base">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <li class="w-full"><a class="relative py-2 w-full" href="#team">Our Team</a></li>
+                    <li class="w-full"><a class="relative py-2 w-full" href="#projects">Projects</a></li>
+                    <li class="w-full"><a class="relative py-2 w-full" href="#services">Services</a></li>
+                    <li class="w-full"><a class="relative py-2 w-full" href="#contact">Contact</a></li>
                 </ul>
-                <button class="close-btn absolute top-8 right-8 text-3xl p-3 text-gray-400"><i
+                <button class="close-btn absolute top-6 right-6 text-3xl p-3 text-gray-400"><i
                         class="fa-solid fa-xmark"></i></button>
             </div>
 

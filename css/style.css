@@ -615,8 +615,8 @@ video {
   right: 0px;
 }
 
-.right-8 {
-  right: 2rem;
+.right-6 {
+  right: 1.5rem;
 }
 
 .right-\[5\%\] {
@@ -627,8 +627,8 @@ video {
   top: 0px;
 }
 
-.top-8 {
-  top: 2rem;
+.top-6 {
+  top: 1.5rem;
 }
 
 .top-\[25\%\] {
@@ -1067,6 +1067,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .px-9 {
   padding-left: 2.25rem;
   padding-right: 2.25rem;
@@ -1105,10 +1110,6 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.ps-8 {
-  padding-inline-start: 2rem;
 }
 
 .text-center {
@@ -1426,6 +1427,10 @@ nav a:hover::after {
 .mobile-menu-visible {
   translate: 0;
   box-shadow: 0 0 4px 3px #808080;
+}
+
+.dropdown-arrow-btn {
+  margin-left: auto;
 }
 
 /* VIDEO MODAL STYLING */

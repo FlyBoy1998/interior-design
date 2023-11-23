@@ -150,6 +150,10 @@ nav a:hover::after {
     box-shadow: 0 0 4px 3px #808080;
 }
 
+.dropdown-arrow-btn {
+    margin-left: auto;
+}
+
 /* VIDEO MODAL STYLING */
 .modal {
     backdrop-filter: brightness(40%);

@@ -72,8 +72,12 @@ nav a:hover::after {
 .dropdown-list-mobile {
     height: 0;
     visibility: hidden;
-    overflow: hidden;
-    transition: all 0.4s ease-out;
+}
+
+.dropdown-list-mobile-visible {
+    height: max-content;
+    visibility: visible;
+    overflow: unset;
 }
 
 .play-video-btn {

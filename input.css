@@ -3,18 +3,17 @@
 @tailwind utilities;
 
 @layer components {
+    /* HERO SECTION SOCIAL MEDIA ICONS */
     .social-media-icon {
         @apply text-white hover:text-gray-400 transition-colors ease-linear;
     }
 
-    .testimonial-bullet {
-        @apply w-[8px] h-[8px] bg-gray-600 rounded-full cursor-pointer;
-    }
-
+    /* MEMBERS SOCIAL MEDIA ICONS */
     .member-social-media {
         @apply flex justify-center items-center space-x-3 absolute bottom-0 left-0 z-10 w-full py-5 text-white bg-orange-600 transition-transform ease-linear duration-150;
     }
-
+    
+    /* PRICING CONTAINERS */
     .pricing-container {
         @apply flex flex-col flex-auto items-center justify-center space-y-6 px-14 py-10 border-2 rounded-lg border-gray-200 sm:flex-initial;
     }
@@ -23,10 +22,17 @@
         @apply px-4 py-3 w-full text-white bg-orange-600 border-2 border-orange-600 hover:bg-transparent hover:text-gray-800 transition-all duration-150 ease-linear;
     }
 
+    /* FAQ */
     .question {
         @apply flex items-center text-xl font-semibold cursor-pointer py-2 text-gray-800;
     }
 
+    /* TESTIMONIALS */
+    .testimonial-bullet {
+        @apply w-[8px] h-[8px] bg-gray-600 rounded-full cursor-pointer;
+    }
+
+    /* INPUTS */
     .input-container {
         @apply w-full flex flex-col gap-2 mb-6;
     }
@@ -35,10 +41,12 @@
         @apply border-2 border-gray-300 rounded-md py-3 px-2 outline-none focus:border-orange-500;
     }
 
+    /* FOOTERS */
     .footer-col {
         @apply flex flex-col w-full md:w-1/3 gap-5;
     }
 
+    /* SECTION TITLES */
     .secondary-title {
         @apply text-orange-500 font-bold uppercase text-sm;
     }

@@ -10,6 +10,10 @@ const video = document.getElementById('video');
 const dropdownArrowBtn = document.querySelector('.dropdown-arrow-btn');
 const dropdownListMobile = document.querySelector('.dropdown-list-mobile');
 
+const clientContainers = document.querySelectorAll('.client-container');
+const prevBtn = document.getElementById('previous');
+const nextBtn = document.getElementById('next');
+
 // Play Video 
 function playVideo() {
     modal.classList.add('fixed');

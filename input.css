@@ -305,6 +305,10 @@ input[type="radio"]:checked + label::before {
     flex: 1 0 100%;
 }
 
+.active {
+    background-color: rgb(234, 88, 12);
+}
+
 /* PROJECTS STYLING */
 .single-project-container img {
     transition: transform 0.3s ease;

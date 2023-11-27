@@ -10,16 +10,20 @@ const video = document.getElementById('video');
 const dropdownArrowBtn = document.querySelector('.dropdown-arrow-btn');
 const dropdownListMobile = document.querySelector('.dropdown-list-mobile');
 
+const slider = document.getElementById('slider');
 const clientContainers = document.querySelectorAll('.client-container');
 const prevBtn = document.getElementById('previous');
 const nextBtn = document.getElementById('next');
+const dots = document.querySelectorAll('.dot');
+
+let index = 1;
+let width = clientContainers[0].clientWidth;
 
 // Play Video 
 function playVideo() {
     modal.classList.add('fixed');
     modal.classList.remove('visibility-hidden');
     videoModal.classList.add('video-container-fade');
-    // Disable Scrolling While Video Plays
     video.play();
 }
 
@@ -28,7 +32,6 @@ function closeModal() {
     modal.classList.remove('fixed');
     modal.classList.add('visibility-hidden');
     videoModal.classList.remove('video-container-fade');
-    // Enable Scrolling
     video.load();
 }
 
@@ -57,6 +60,20 @@ function showDropdownList() {
     dropdownArrowBtn.classList.toggle('dropdown-arrow-rotate');
 }
 
+// Testimonials Slider
+function nextSlide() {
+    if(index >= clientContainers.length - 1){return};
+    slider.style.transition = 'transform 0.4s ease-out';
+    index++;
+    slider.style.transform = `translateX(-${width * index}px)`;
+}
+function prevSlide() {
+    if(index <= 0){return}
+    slider.style.transition = 'transform 0.4s ease-out';
+    index--;
+    slider.style.transform = `translateX(-${width * index}px)`;
+}
+
 // Event listeners
 hamburgerBtn.forEach((btn) => {
     btn.addEventListener('click', () => showMobileMenu());
@@ -66,3 +83,5 @@ window.addEventListener('scroll', displayStickyNav);
 playVideoBtn.addEventListener('click', playVideo);
 closeModalBtn.addEventListener('click', closeModal);
 dropdownArrowBtn.addEventListener('click', showDropdownList);
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);

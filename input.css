@@ -28,7 +28,7 @@
     }
 
     /* TESTIMONIALS */
-    .testimonial-bullet {
+    .testimonial-dots {
         @apply w-[8px] h-[8px] bg-gray-600 rounded-full cursor-pointer;
     }
 

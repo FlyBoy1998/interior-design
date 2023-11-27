@@ -568,6 +568,8 @@ video {
   }
 }
 
+/* HERO SECTION SOCIAL MEDIA ICONS */
+
 .social-media-icon {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -582,14 +584,7 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.testimonial-bullet {
-  height: 8px;
-  width: 8px;
-  cursor: pointer;
-  border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
-}
+/* MEMBERS SOCIAL MEDIA ICONS */
 
 .member-social-media {
   position: absolute;
@@ -620,6 +615,8 @@ video {
   transition-duration: 150ms;
   transition-timing-function: linear;
 }
+
+/* PRICING CONTAINERS */
 
 .pricing-container {
   display: flex;
@@ -677,6 +674,8 @@ video {
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
+/* FAQ */
+
 .question {
   display: flex;
   cursor: pointer;
@@ -689,6 +688,19 @@ video {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
+
+/* TESTIMONIALS */
+
+.testimonial-dots {
+  height: 8px;
+  width: 8px;
+  cursor: pointer;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
+/* INPUTS */
 
 .input-container {
   margin-bottom: 1.5rem;
@@ -716,6 +728,8 @@ video {
   border-color: rgb(249 115 22 / var(--tw-border-opacity));
 }
 
+/* FOOTERS */
+
 .footer-col {
   display: flex;
   width: 100%;
@@ -728,6 +742,8 @@ video {
     width: 33.333333%;
   }
 }
+
+/* SECTION TITLES */
 
 .secondary-title {
   font-size: 0.875rem;
@@ -1659,6 +1675,10 @@ input[type="radio"]:checked + label::before {
 
 .client-container {
   flex: 1 0 100%;
+}
+
+.active {
+  background-color: rgb(234, 88, 12);
 }
 
 /* PROJECTS STYLING */

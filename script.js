@@ -13,7 +13,6 @@ const dropdownListMobile = document.querySelector('.dropdown-list-mobile');
 const sliderContainer = document.getElementById('slider-container');
 const slider = document.getElementById('slider');
 const clientContainers = document.querySelectorAll('.client-container');
-console.log(clientContainers);
 const prevBtn = document.getElementById('previous');
 const nextBtn = document.getElementById('next');
 const dots = document.querySelectorAll('.dot');
@@ -68,7 +67,6 @@ function nextSlide() {
     if(index > clientContainers.length - 1) {
         index = 0;
     };
-    console.log(index);
     slider.style.transition = 'transform 0.4s ease-out';
     slider.style.transform = `translateX(-${width * index}px)`;
     dotsNav();
@@ -79,7 +77,6 @@ function prevSlide() {
     if(index < 0) {
         index = clientContainers.length - 1;
     };
-    console.log(index);
     slider.style.transition = 'transform 0.4s ease-out';
     slider.style.transform = `translateX(-${width * index}px)`;
     dotsNav();
@@ -112,4 +109,6 @@ closeModalBtn.addEventListener('click', closeModal);
 dropdownArrowBtn.addEventListener('click', showDropdownList);
 nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', prevSlide);
-sliderContainer.addEventListener('mouseover', clearInterval(autoSlide));
+sliderContainer.addEventListener('mouseover', () => {
+    clearInterval(autoSlide);
+});

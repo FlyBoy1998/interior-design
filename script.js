@@ -84,7 +84,7 @@ function prevSlide() {
 
 // Set auto sliding
 function autoSlide() {
-    setInterval(timer, 3500);
+    deleteInterval = setInterval(timer, 3500);
     function timer() {
         nextSlide();
     }
@@ -110,5 +110,8 @@ dropdownArrowBtn.addEventListener('click', showDropdownList);
 nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', prevSlide);
 sliderContainer.addEventListener('mouseover', () => {
-    clearInterval(autoSlide);
+    clearInterval(deleteInterval);
 });
+sliderContainer.addEventListener('mouseleave', () => {
+    autoSlide();
+})

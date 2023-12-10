@@ -5,7 +5,7 @@ const closeBtn = document.querySelector('.close-btn');
 const playVideoBtn = document.querySelector('.play-video-btn');
 const closeModalBtn = document.querySelector('.close-modal-btn');
 const modal = document.querySelector('.modal');
-const videoModal = document.querySelector('.video-modal');
+const videoContainer = document.getElementById('video-container');
 const video = document.getElementById('video');
 const dropdownArrowBtn = document.querySelector('.dropdown-arrow-btn');
 const dropdownListMobile = document.querySelector('.dropdown-list-mobile');
@@ -24,7 +24,7 @@ let width = clientContainers[0].clientWidth;
 function playVideo() {
     modal.classList.add('fixed');
     modal.classList.remove('visibility-hidden');
-    videoModal.classList.add('video-container-fade');
+    videoContainer.classList.add('video-container-fade');
     video.play();
 }
 
@@ -32,7 +32,7 @@ function playVideo() {
 function closeModal() {
     modal.classList.remove('fixed');
     modal.classList.add('visibility-hidden');
-    videoModal.classList.remove('video-container-fade');
+    videoContainer.classList.remove('video-container-fade');
     video.load();
 }
 

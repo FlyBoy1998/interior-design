@@ -932,8 +932,8 @@ video {
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-1\/2 {
@@ -1597,17 +1597,12 @@ nav a:hover::after {
 }
 
 .visibility-hidden {
+  display: none;
   visibility: hidden;
   z-index: -1;
 }
 
 /* FADE IN EFFECT FOR VIDEO CONTAINER */
-
-.video-modal {
-  transform: translateY(-8%);
-  opacity: 0;
-  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
-}
 
 .video-modal .close-modal-btn {
   transition: none;
@@ -1617,6 +1612,26 @@ nav a:hover::after {
   transform: translateY(0);
   opacity: 1;
   z-index: 10;
+  animation: fade-in 0.4s ease-out;
+}
+
+.video-container {
+  transform: translateY(-8%);
+  opacity: 0;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    transform: translateY(-8%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 10;
+  }
 }
 
 /* STYLE ACCORDIONS FOR FAQ */
